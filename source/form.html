@@ -25,6 +25,8 @@
           </li>
         </ul>
       </nav>
+<!-- По навигации замечания в индексе -->
+
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Отзыв о седоне</h1>
@@ -32,12 +34,16 @@
         <p class="main-header_text">
           Sedona
         </p>
+<!-- main-header_text два подчеркивания -->
+
       </section>
       <section class="review">
         <h2 class="review__title">Оставьте свой отзыв</h2>
         <p class="review__description">Помогите нашим отелям стать лучше!
           Оставьте отзыв о них,а также о посещенных вами достопримечательностях
         </p>
+
+<!-- Согласно методологии "БЭМ" у всех элементов на странице должен быть класс. Допускается только не присваивать класс оконечным элементам (таких у которых не может быть вложенности, например img) -->
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Представьтесь:</legend>
@@ -107,14 +113,19 @@
             </ul>
           </fieldset>
           <section class="emotion">
+<!-- Почему section, а не fieldset. Это же форма. -->
             <label for="emotion-text">Опишите свои эмоции:</label>
             <input type="textarea" name="emotion" id="emotion-text" placeholder="Опишите подробно все свои восторги">
           </section>
           <label class="visually-hidden" for="form-button">Отправка формы</label>
+<!-- зачем нужен <label class="visually-hidden" for="form-button">Отправка формы</label>? -->
+
           <button type="submit" id="form-button" class="send-form">Отправить отзыв</button>
         </form>
       </section>
 
+
+<!-- по футеру замечания в индексе -->
     </main>
     <footer class="page-footer">
       <h2 class="footer__title">#visitsedona</h2>

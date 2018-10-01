@@ -10,6 +10,9 @@
         <img class="page-header__logo-image" src="img/logotype-mobile.png" width="110" height="223" alt="City of Sedona">
       </a>
       <nav class="main-nav">
+
+<!-- Не вижу кнопки открытия\закрытия меню -->
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
@@ -60,6 +63,13 @@
             </ul>
           </li>
           <li class="advantages__item--change-color">
+<!-- Модификатор не может существовать без модифицируемого элемента.
+Должно быть так: <li class="advantages__item advantages__item--change-color">
+И раз уж речь идет о смене цвета, то логичнее писать модификатор с указанием того самого цвета : advantages__item--white -->
+<!-- Подобные ошибки есть и далее по коду. Их тоже нужно исправить -->
+
+
+
             <h3 class="adventages__item-title">Там есть мост дьявола</h3>
             <span class="advantages__item-number">-№2-</span>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -86,6 +96,7 @@
       </section>
       <section class="search-hotel">
         <h2 class="search-hotel__title">Заинтересовались?</h2>
+<!-- Заинтересовались? для заголовка не годиться. Это слоган или призыв, но точно не заголовок. Заголовок для этого блока нужно сделать с классом Вижуалли-хидден. -->
         <p class="search-hotel__description">Укажите предпологаемые даты поездки,и мы поккажем вам лучшие предложения гостиниц в Седоне</p>
         <button type="button" class="search-hotel__button">Найти гостиницу</button>
       </section>
@@ -94,10 +105,14 @@
       </section>
     </main>
     <footer class="page-footer">
+
+<!-- Блок page-footer, а элемент footer__title. Приведи к одному виду-->
       <h2 class="footer__title">#visitsedona</h2>
       <ul class="social__list">
+<!-- social__list это элемент. А элемент без блока существовать не может. Если есть элемент social__list, то где-то должен быть блок social -->
         <li class="social__item">
           <a href="#" class="social__tw">tw</a>
+<!-- tw, fb, yt это должны быть модификаторы, отвечающие за соответствующую иконку. Вот так : <a href="#" class="social__link social__link--fb">fb</a> -->
         </li>
         <li class="social__item">
           <a href="#" class="social__fb">fb</a>
