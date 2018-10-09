@@ -16,7 +16,9 @@
 
 
 .site-list__item {
-  padding-top: 7px;
+  .font-bold;
+  line-height: 40px;
+  padding-top: 8px;
   padding-bottom: 6px;
   display: inline-block;
   text-align: center;
@@ -37,11 +39,7 @@
 
 .site-list__item a {
   text-decoration: none;
-  color: #ffffff;
-  font-family: "PtSans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 40px;
-  letter-spacing: 0.01em;
+    color: #ffffff;
 }
 
 .page-header__logo {
@@ -50,18 +48,18 @@
 
 .main-nav__button-open {
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: 17px;
+  right: 19px;
   width: 23px;
   height: 22px;
   font-size: 0;
+  padding-top: 0px;
   cursor: pointer;
   border: none;
-  background: none;
-  background-image: url(../img/icon-menu.svg);
-  fill: #81b3d2;
+  background: url(../img/icon-menu.svg) no-repeat;
 }
 
 .main-nav__button-open--close {
-  background-image: url(../img/icon-cross.svg);
+  background: url(../img/icon-cross.svg) no-repeat;
+  top: 17px;
 }
