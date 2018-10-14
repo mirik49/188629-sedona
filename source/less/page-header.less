@@ -1,0 +1,30 @@
+@tablet-width: 768px;
+
+
+@media (min-width: 320px) {
+  .main-container {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.page-header__logo {
+  position: relative;
+  z-index: 1;
+  margin-left: 110px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-container {
+    position: relative;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+    right: 354px;
+  }
+}

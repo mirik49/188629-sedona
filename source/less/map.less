@@ -16,3 +16,26 @@
   margin: 0;
   padding-top: 10px;
 }
+
+.map__img-tablet {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .map__img-mobile {
+    display: none;
+  }
+
+  .map__img-tablet {
+    display: block;
+  }
+
+  .map p {
+    padding-top: 20px;
+  }
+
+  .map__image::before {
+    top: 182px;
+    left: 370px;
+  }
+}

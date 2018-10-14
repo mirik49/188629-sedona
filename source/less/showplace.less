@@ -1,0 +1,53 @@
+.showplace {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.showplace__legend {
+  .font-bold;
+  text-align: center;
+  padding-top: 19px;
+}
+
+.showplace__list {
+  list-style: none;
+  padding-left: 100px;
+}
+
+.showplace__item {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 38px;
+}
+
+.showplace__item input {
+  display: none;
+}
+
+.showplace__item label {
+  .font-bold;
+  text-transform: none;
+}
+
+.showplace__item label::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 0px;
+  left: -80px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.showplace__item input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 0px;
+  left: -80px;
+  border-radius: 4px;
+  background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+}
