@@ -1,4 +1,5 @@
 @tablet-width: 768px;
+@desktop-width: 1280px;
 
 
 @media (min-width: 320px) {
@@ -26,5 +27,26 @@
     position: absolute;
     top: 0;
     right: 354px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+    right: 548px;
+  }
+
+  .page-header__logo img {
+    width: 188px;
+    height: 96px;
   }
 }
