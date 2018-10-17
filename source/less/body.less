@@ -1,3 +1,6 @@
+@tablet-width: 768px;
+@desktop-width: 1280px;
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -17,9 +20,25 @@ input[type="radio"].visually-hidden {
 @media (min-width: 320px) {
   .main-container {
     position: relative;
-    width: 280px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 320px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-container {
+    position: relative;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
