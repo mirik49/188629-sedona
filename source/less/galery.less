@@ -70,3 +70,149 @@
   left: 0;
   background: url("../img/icon-like.svg") no-repeat 50% 50%;
 }
+
+@media (min-width: @tablet-width) {
+  .galery-wrapper {
+    padding-bottom: 2px;
+  }
+
+  .galery__title {
+    .font-bold;
+    margin: 0;
+    font-size: 30px;
+    padding-top: 76px;
+  }
+
+  .galery__description {
+    padding-top: 17px;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  .galery__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-top: 38px;
+  }
+
+  .galery__image img {
+    width: 324px;
+    height: 267px;
+  }
+
+  .galery__image--first img {
+    width: 648px;
+    height: 400px;
+  }
+
+  .galery__item-wrapper {
+    margin-top: -4px;
+    padding-left: 20px;
+    padding-top: 6px;
+    background-color: #f2f2f2;
+  }
+
+  .galery__span-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+  }
+
+  .galery__likes {
+    padding-right: 20px;
+    margin-left: auto;
+    margin-top: -20px;
+  }
+
+  .galery__list li::before {
+    content: none;
+  }
+
+  .galery__list li:last-child::after {
+    content: none;
+  }
+
+  .galery__image {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .galery__title {
+    padding-top: 110px;
+  }
+
+  .galery__description {
+    padding-top: 18px;
+    padding-left: 380px;
+    padding-right: 380px;
+  }
+
+  .galery__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-top: 38px;
+  }
+
+  .galery__item {
+    position: relative;
+  }
+
+  .galery__image img {
+    width: 400px;
+    height: 267px;
+  }
+
+  .galery__image--first img {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .galery__item-wrapper {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 1;
+    margin-top: -84px;
+    padding-left: 20px;
+    padding-top: 6px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .galery__span-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+  }
+
+  .galery__caption,
+  .galery__autor,
+  .galery__likes {
+    color: #ffffff;
+  }
+
+  .galery__likes {
+    padding-right: 20px;
+    margin-left: auto;
+    margin-top: -20px;
+  }
+
+  .galery__list li::before {
+    content: none;
+  }
+
+  .galery__list li:first-child {
+    margin-bottom: -3px;
+  }
+
+  .galery__list li:last-child::after {
+    content: none;
+  }
+
+  .galery__image {
+    padding: 0;
+  }
+}
