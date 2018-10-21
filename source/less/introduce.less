@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   border: none;
+  padding-right: 30px;
 }
 
 .introduse__legend {
@@ -40,4 +41,62 @@
 .introduce__list input[placeholder] {
   .font-bold;
   text-transform: capitalize;
+}
+
+@media (min-width: @tablet-width) {
+  .introduce {
+    padding-right: 0;
+  }
+
+  .introduse__legend {
+    font-size: 22px;
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
+  .introduce__list {
+    list-style: none;
+    padding-left: 96px;
+  }
+
+  .introduce__item {
+    padding-bottom: 18px;
+    display: flex;
+  }
+
+  .introduce__list label {
+    .font;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 13px;
+    padding-top: 18px;
+  }
+
+  .introduce__list input {
+    border: none;
+    height: 58px;
+    background-color: #f2f2f2;
+    padding-left: 23px;
+  }
+
+  .introduce__list input[placeholder] {
+    .font-bold;
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .introduce {
+    margin-left: 20px;
+  }
+
+  .introduce__list input {
+    width: 350px;
+  }
+
+  .introduse__legend {
+    text-align: left;
+    padding-left: 113px;
+    padding-bottom: 40px;
+  }
 }

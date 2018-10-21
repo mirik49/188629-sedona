@@ -51,3 +51,118 @@
   border-radius: 4px;
   background: url("../img/icon-tick.svg") no-repeat 50% 50%;
 }
+
+@media (min-width: @tablet-width) {
+  .showplace {
+    width: 648px;
+    margin-left: 135px;
+  }
+
+  .showplace__legend {
+    position: relative;
+    font-size: 21px;
+    padding-left: 53px;
+    padding-right: 190px;
+    padding-top: 32px;
+  }
+
+  .showplace__legend::before {
+    .form-tablet__line;
+    right: 60px;
+    bottom: 25px;
+  }
+
+  .showplace__legend::after {
+    .form-tablet__line;
+    left: -76px;
+    bottom: 25px;
+  }
+
+  .showplace__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 26px;
+  }
+
+  .showplace__item {
+    margin-right: 146px;
+  }
+
+  .showplace__list li:last-child {
+    margin-right: 0;
+  }
+
+  .showplace__list li:nth-child(3),
+  .showplace__list li:nth-child(4) {
+    padding-top: 24px;
+  }
+
+  .showplace__red-rock {
+    padding-left: 20px;
+  }
+
+  .showplace__list li:nth-child(3) label::before,
+  .showplace__list li:nth-child(4) label::before,
+  .showplace__list li:nth-child(3) label::after,
+  .showplace__list li:nth-child(4) label::after {
+    top: 10px;
+  }
+
+  .showplace__list li:last-child label::before,
+  .showplace__list li:last-child label::after {
+    left: -58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .showplace {
+    width: 960px;
+    margin-left: 100px;
+  }
+
+  .showplace__legend {
+    padding-top: 25px;
+    padding-left: 340px;
+    padding-right: 300px;
+  }
+
+  .showplace__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 47px;
+  }
+
+  .showplace__list li {
+    margin: 0;
+  }
+
+  .showplace__list li:nth-child(2) {
+    margin-left: 48px;
+  }
+
+  .showplace__list li:nth-child(3),
+  .showplace__list li:nth-child(4) {
+    padding-top: 14px;
+    margin-left: 30px;
+  }
+
+  .showplace__list li:nth-child(3) label::before,
+  .showplace__list li:nth-child(3) label::after {
+    left: -58px;
+    top: 0;
+  }
+
+  .showplace__list li:last-child label::before,
+  .showplace__list li:last-child label::after {
+    left: -40px;
+    top: 0;
+  }
+
+  .showplace__slide-park,
+  .showplace__red-rock {
+    padding-left: 20px;
+  }
+}

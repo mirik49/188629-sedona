@@ -62,7 +62,7 @@
   padding-top: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
     justify-content: space-around;
@@ -87,5 +87,13 @@
 
   .page-footer__developed-link {
     padding-top: 6px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    box-shadow:
+      -40px 0 0 0 #f2f2f2,
+      40px 0 0 0 #f2f2f2;
   }
 }
