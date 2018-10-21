@@ -57,3 +57,35 @@
     height: 120px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .emotion {
+    width: 960px;
+    margin-left: 100px;
+  }
+
+  .emotion__legend {
+    padding-top: 44px;
+    padding-left: 21px;
+  }
+
+  .emotion__legend::before {
+    .form-tablet__line;
+    right: -343px;
+    width: 290px;
+    bottom: 72px;
+  }
+
+  .emotion__legend::after {
+    .form-tablet__line;
+    width: 290px;
+    left: -331px;
+    bottom: 72px;
+  }
+
+  .emotion input[type="textarea"] {
+    width: 920px;
+    height: 140px;
+    padding: 20px;
+  }
+}

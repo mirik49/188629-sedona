@@ -24,6 +24,7 @@
 
 .presentation__video {
   padding-top: 20px;
+    background: url("../img/video-mobile@1x.jpg") no-repeat 50% 50%;
 }
 
 .presentation__video-progress-bar {
@@ -60,8 +61,6 @@ input[type="range"]::-webkit-slider-runnable-track {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-
-
 .presentaition__video-controls {
   margin-top: -4px;
   position: absolute;
@@ -92,6 +91,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 @media (min-width: @tablet-width) {
   .presentaition {
     padding-top: 45px;
+    padding-bottom: 0;
   }
 
   .presentation__title {
@@ -112,15 +112,16 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
 
   .presentation__video {
-    padding-top: 0;
+    padding-top: 90px;
     width: 648px;
     height: 499px;
-    padding-left: 60px;
+    padding-left: 119px;
+    background: url("../img/video-tablet@1x.jpg") no-repeat 50% 50%;
   }
 
   .presentation__video-progress-bar {
     position: absolute;
-    bottom: -44px;
+    bottom: 48px;
     left: 60px;
     width: 648px;
     height: 93px;
@@ -179,8 +180,9 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 @media (min-width: @desktop-width) {
   .presentaition {
-    padding-bottom: 81px;
+    padding-bottom: 43px;
   }
+
   .presentation__description {
     padding-left: 360px;
     padding-right: 360px;
@@ -193,15 +195,16 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
 
   .presentation__video {
-    padding-top: 42px;
+    padding-top: 83px;
     width: 800px;
     height: 500px;
-    padding-left: 200px;
+    padding-left: 400px;
+    background: url("../img/video-desktop@1x.jpg") no-repeat 50% 50%;
   }
 
   .presentation__video-progress-bar {
     position: absolute;
-    bottom: 3px;
+    bottom: 44px;
     left: 200px;
     width: 800px;
     height: 93px;

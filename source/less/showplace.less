@@ -84,7 +84,7 @@
     padding-top: 26px;
   }
 
-  .showplace__list li {
+  .showplace__item {
     margin-right: 146px;
   }
 
@@ -131,5 +131,38 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin: 0;
+    padding-top: 47px;
+  }
+
+  .showplace__list li {
+    margin: 0;
+  }
+
+  .showplace__list li:nth-child(2) {
+    margin-left: 48px;
+  }
+
+  .showplace__list li:nth-child(3),
+  .showplace__list li:nth-child(4) {
+    padding-top: 14px;
+    margin-left: 30px;
+  }
+
+  .showplace__list li:nth-child(3) label::before,
+  .showplace__list li:nth-child(3) label::after {
+    left: -58px;
+    top: 0;
+  }
+
+  .showplace__list li:last-child label::before,
+  .showplace__list li:last-child label::after {
+    left: -40px;
+    top: 0;
+  }
+
+  .showplace__slide-park,
+  .showplace__red-rock {
+    padding-left: 20px;
   }
 }
