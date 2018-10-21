@@ -1,0 +1,91 @@
+.emotion {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 52px;
+}
+
+.emotion__legend {
+  .font-bold;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.emotion input[type="textarea"] {
+  border: none;
+  background-color: #f2f2f2;
+  width: 239px;
+  height: 120px;
+  padding: 20px;
+  margin-left: 19px;
+}
+
+.emotion input[placeholder] {
+  .font-bold;
+  text-transform: none;
+}
+
+@media (min-width: @tablet-width) {
+  .emotion {
+    width: 648px;
+    margin-left: 40px;
+  }
+
+  .emotion__legend {
+    position: relative;
+    font-size: 21px;
+    padding-top: 31px;
+    padding-left: 42px;
+    padding-bottom: 60px;
+  }
+
+  .emotion__legend::before {
+    .form-tablet__line;
+    right: -196px;
+    bottom: 72px;
+  }
+
+  .emotion__legend::after {
+    .form-tablet__line;
+    left: -156px;
+    bottom: 72px;
+  }
+
+  .emotion input[type="textarea"] {
+    width: 608px;
+    height: 120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotion {
+    width: 960px;
+    margin-left: 100px;
+  }
+
+  .emotion__legend {
+    padding-top: 44px;
+    padding-left: 21px;
+  }
+
+  .emotion__legend::before {
+    .form-tablet__line;
+    right: -343px;
+    width: 290px;
+    bottom: 72px;
+  }
+
+  .emotion__legend::after {
+    .form-tablet__line;
+    width: 290px;
+    left: -331px;
+    bottom: 72px;
+  }
+
+  .emotion input[type="textarea"] {
+    width: 920px;
+    height: 140px;
+    padding: 20px;
+  }
+}

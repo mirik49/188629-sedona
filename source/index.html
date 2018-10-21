@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,15 +11,14 @@
         <img class="page-header__logo-image" src="img/logotype-mobile.png" width="110" height="223" alt="City of Sedona">
       </a>
       <nav class="main-nav">
-
-<!-- Не вижу кнопки открытия\закрытия меню -->
-
+    <header class="page-header main-container">
+      <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Фото и видео</a>
+            <a href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a href="form.html">Форма отзыва</a>
@@ -27,105 +27,133 @@
             <a href="https://htmlacademy.ru">HTMLAcademy</a>
           </li>
         </ul>
+          <button type="button" class="main-nav__button-open">B</button>
       </nav>
+      <a href="index.html" class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+        </picture>
+      </a>
     </header>
-    <main class="page-main">
+
+    <main class="main-page main-container">
       <h1 class="visually-hidden">Welcome to the gargeous Sedona</h1>
-      <section class="main-header">
-        <p class="main-header_text">
-          <img src="img/text-index.svg" width="282" height="214" alt="Sedona">
+      <section class="main-page__header">
+        <p class="main-page__header-text">
+          <img src="img/text-sedona-index.svg" width="282" height="214" alt="Sedona">
         </p>
       </section>
-      <section class="adventages">
+      <section class="advantages">
         <h2 class="advantages__slogan">Седона - небольшой городок в Аризоне заслуживающий большего!</h2>
-        <p class="advantages__intro">Рассмотрим 5 причин,по которымседона круче,чем Гранд Каньон!</p>
+        <p class="advantages__intro">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h3 class="advantages__item-title">Настоящий городок</h3>
-            <span class="advantages__item-number">-№1-</span>
-            <p class="advantages__item-clarif">Седона не аттракцион для туристов там течет своя жизнь</p>
-            <p class="advantages__item-img">
-              <img  src="img/photo-city.jpg" width="520" height="260" alt="Фото города">
-            </p>
-            <ul class="adventages-second__list">
-              <li class="adventages-second__item adventages-second__item--background">
-                <h4 class="adventages-second__title">Жилье</h4>
-                <p class="adventages-second__description">Рекомендуем пожитьв настоящем мотеле, все как в кино!</p>
+            <div class="advantages__item-wrapper">
+              <div class="advantages__wrapper">
+                <h3 class="advantages__item-title advantages__item-title--decoration">Настоящий городок</h3>
+                <span class="advantages__item-number">—№1—</span>
+                <p class="advantages__item-description">Седона не аттракцион для туристов там течет своя жизнь</p>
+              </div>
+              <p class="advantages__item-img">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/main-city-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
+                  <img  src="img/main-city-mobile@1x.jpg" class="advantages__item-img-mobile" width="320" height="260" alt="Фото города">
+                </picture>
+              </p>
+            </div>
+            <ul class="advantages-second__list">
+              <li class="advantages-second__item advantages-second__item--background">
+                <h4 class="advantages-second__title">Жилье</h4>
+                <p class="advantages-second__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="adventages-second__item adventages-second__item--background">
-                <h4 class="adventages-second__title">Сувениры</h4>
-                <p class="adventages-second__description">Не только Китайского, но и местного производства!</p>
+              <li class="advantages-second__item advantages-second__item--background">
+                <h4 class="advantages-second__title">Сувениры</h4>
+                <p class="advantages-second__description">Не только Китайского, но и местного производства!</p>
               </li>
-              <li class="adventages-second__item adventages-second__item--background">
-                <h4 class="adventages-second__title">Еда</h4>
-                <p class="adventages-second__description">Всегда заказывайте только фирменный бургер, вы не разочаруетесь!</p>
+              <li class="advantages-second__item advantages-second__item--background">
+                <h4 class="advantages-second__title">Еда</h4>
+                <p class="advantages-second__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
-          <li class="advantages__item--change-color">
-<!-- Модификатор не может существовать без модифицируемого элемента.
-Должно быть так: <li class="advantages__item advantages__item--change-color">
-И раз уж речь идет о смене цвета, то логичнее писать модификатор с указанием того самого цвета : advantages__item--white -->
-<!-- Подобные ошибки есть и далее по коду. Их тоже нужно исправить -->
-
-
-
-            <h3 class="adventages__item-title">Там есть мост дьявола</h3>
-            <span class="advantages__item-number">-№2-</span>
-            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <p class="advantages__item-img">
-              <img src="img/photo-bridge.jpg" width="520" height="260" alt="Фото моста">
-            </p>
+          <li class="advantages__item ">
+            <div class="advantages__item-wrapper">
+              <div class="advantages__wrapper advantages__wrapper--reverse">
+                <h3 class="advantages__item-title advantages__item-title--two">Там есть мост дьявола</h3>
+                <span class="advantages__item-number">—№2—</span>
+                <p class="advantages__item-description advantages__item-description--two">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+              <p class="advantages__item-img">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/main-bridge-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
+                  <img src="img/main-bridge-mobile@1x.jpg" class="advantages__item-img-mobile" width="320" height="260" alt="Фото моста">
+                </picture>
+              </p>
+            </div>
           </li>
-          <li class="adventages__item--change-color">
-            <h3 class="adventages__item-title">Небольшая площадь</h3>
-            <span class="adventages__item-number">-№3-</span>
-            <p class="adventages__descriotion">Все интерессные места находяться очень близко</p>
-          </li>
-          <li class="adventages__item--change-color">
-            <h3 class="adventages__item-title">Красивая дорога</h3>
-            <span class="adventages__item-number">-№4-</span>
-            <p class="adventages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="adventages__item--change-color">
-            <h3 class="adventages__item-title">Мало туристов</h3>
-            <span class="adventages__item-number">-№5-</span>
-            <p class="adventages__description">Большинство едет в Гранд Каньон и толпиться там</p>
-          </li>
+          <div class="advantages__last-wrapper">
+            <li class="advantages__item advantages__item--black">
+              <h3 class="advantages__item-title">Небольшая площадь</h3>
+              <span class="advantages__item-number">—№3—</span>
+              <p class="advantages__description">Все интерессные места находяться очень близко</p>
+            </li>
+            <li class="advantages__item advantages__item--black">
+              <h3 class="advantages__item-title">Красивая дорога</h3>
+              <span class="advantages__item-number">—№4—</span>
+              <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantages__item advantages__item--black">
+              <h3 class="advantages__item-title">Мало туристов</h3>
+              <span class="advantages__item-number">—№5—</span>
+              <p class="advantages__description">Большинство едет в Гранд Каньон и толпиться там</p>
+            </li>
+        </div>
         </ul>
       </section>
       <section class="search-hotel">
-        <h2 class="search-hotel__title">Заинтересовались?</h2>
+        <h2 class="visually-hidden">Бронирование отеля</h2>
+        <p class="search-hotel__slogan">Заинтересовались?</p>
 <!-- Заинтересовались? для заголовка не годиться. Это слоган или призыв, но точно не заголовок. Заголовок для этого блока нужно сделать с классом Вижуалли-хидден. -->
-        <p class="search-hotel__description">Укажите предпологаемые даты поездки,и мы поккажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button" class="search-hotel__button">Найти гостиницу</button>
+        <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="search-hotel__button">Найти гостиницу</a>
       </section>
       <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1538410789776" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <!--
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418401.6890056883!2d-111.89914208607107!3d34.98759582273506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2z0KTQu9Cw0LPRgdGC0LDRhNGELCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1538947678989"  frameborder="0"  allowfullscreen></iframe>
+      -->
+        <p class="map__image">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+          <img src="img/bg-map-mobile@1x.jpg" class="map__img-mobile" width="320" height="350" alt="Седона на карте">
+          </picture>
+        </p>
       </section>
     </main>
-    <footer class="page-footer">
-
-<!-- Блок page-footer, а элемент footer__title. Приведи к одному виду-->
-      <h2 class="footer__title">#visitsedona</h2>
-      <ul class="social__list">
-<!-- social__list это элемент. А элемент без блока существовать не может. Если есть элемент social__list, то где-то должен быть блок social -->
-        <li class="social__item">
-          <a href="#" class="social__tw">tw</a>
-<!-- tw, fb, yt это должны быть модификаторы, отвечающие за соответствующую иконку. Вот так : <a href="#" class="social__link social__link--fb">fb</a> -->
+    <footer class="page-footer main-container">
+      <h2 class="page-footer__title">#visitsedona</h2>
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a href="#" class="page-footer__social-link page-footer__social-link--tw"></a>
         </li>
-        <li class="social__item">
-          <a href="#" class="social__fb">fb</a>
+        <li class="page-footer__social-item">
+          <a href="#" class="page-footer__social-link page-footer__social-link--fb"></a>
         </li>
-        <li class="social__item">
-          <a href="#" class="social__yt">yt</a>
+        <li class="page-footer__social-item">
+          <a href="#" class="page-footer__social-link page-footer__social-link--yt"></a>
         </li>
       </ul>
-      <p class="developed">Разработано
-        <a class="developed__link" href="https://htmlacademy.ru">
-          <img src="img/logo.svg" width="27" height="34" alt="htmlacademy">
+      <div class= page-footer__developed-wrapper>
+        <p class="page-footer__developed">Разработано</p>
+        <a class="page-footer__developed-link" href="https://htmlacademy.ru">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy">
         </a>
-      </p>
+    </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
