@@ -22,14 +22,19 @@
   text-align: center;
 }
 
+.map__image img {
+  width: 100%;
+}
+
 @media (min-width: @tablet-width) {
   .map__image img {
-    width: 768px;
-    height: 350;
+    display: block;
+    width: 100%;
   }
 
   .map p {
     padding-top: 20px;
+    width: 100%;
   }
 
   .map__image::before {
@@ -43,12 +48,7 @@
 
 @media (min-width: @desktop-width) {
   .map__image img {
-    width: 1200px;
-    height: 350px;
-  }
-
-  .map p {
-    padding-top: 20px;
+    width: 100%;
   }
 
   .map__image::before {

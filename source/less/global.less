@@ -1,5 +1,13 @@
 @tablet-width: 768px;
-@desktop-width: 1280px;
+@desktop-width: 1200px;
+
+
+.img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -20,17 +28,17 @@ input[type="radio"].visually-hidden {
 @media (min-width: 320px) {
   .main-container {
     position: relative;
-    width: auto;
+    width: 320px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .main-container {
-    position: relative;
-    width: 84%;
-    max-width: 960px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 768px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -38,10 +46,6 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: @desktop-width) {
   .main-container {
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    max-width: 1200px;
   }
 }

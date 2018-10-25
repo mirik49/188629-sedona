@@ -22,7 +22,7 @@
   position: absolute;
   z-index: 1;
   top: 17px;
-  right: 20px;
+  right: 40px;
   width: 23px;
   height: 22px;
   font-size: 0;
@@ -35,14 +35,14 @@
 .main-nav__button-open--close {
   background: url(../img/icon-cross.svg) no-repeat;
   top: 17px;
-  right: 20px;
+  right: 40px;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
     width: auto;
   }
-  
+
   .site-list {
     display: block;
   }
@@ -57,7 +57,19 @@
     justify-content: space-around;
   }
 
+  .main-nav__list li:nth-child(1) {
+    margin-left: 12px;
+  }
+
   .main-nav__list li:nth-child(2) {
-    margin-right: 170px;
+    margin-right: 133px;
+  }
+
+  .main-nav__list li:nth-child(3) {
+    margin-right: -15px;
+  }
+
+  .main-nav__list li:nth-child(4) {
+    margin-right: -17px;
   }
 }
