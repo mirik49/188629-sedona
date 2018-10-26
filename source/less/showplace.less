@@ -58,10 +58,16 @@
     align-self: center;
   }
 
+  .showplace__item label {
+    padding-left: 100px;
+  }
+
   .showplace__legend {
     position: relative;
     font-size: 21px;
-    padding-top: 32px;
+    padding-top: 48px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 
   .showplace__legend::before {
@@ -72,7 +78,7 @@
 
   .showplace__legend::after {
     .form-tablet__line;
-    left: -76px;
+    left: 60px;
     bottom: 25px;
   }
 
@@ -80,9 +86,8 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 26px;
-    width: 648px;
     padding-left: 0;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .showplace__item {
@@ -93,18 +98,12 @@
     margin-right: 0;
   }
 
-  .showplace__list li:nth-child(1) {
-    margin-left: 100px;
-    margin-right: auto;
-  }
-
   .showplace__list li:nth-child(2) {
-    margin-right: 15px;
+    margin-left: 50px;
   }
 
-  .showplace__list li:nth-child(3) {
-    margin-left: 100px;
-    margin-right: auto;
+  .showplace__list li:nth-child(1) {
+    margin-right: 13px;
   }
 
   .showplace__red-rock {
@@ -118,10 +117,19 @@
     top: 10px;
   }
 
-  // .showplace__list li:last-child label::before,
-  // .showplace__list li:last-child label::after {
-  //   left: -58px;
-  // }
+  .showplace-wrapper-first {
+    margin-bottom: 10px;
+    margin-left: -30px;
+  }
+
+  .showplace-wrapper-second {
+    margin-left: -18px;
+  }
+
+  .showplace-wrapper-first,
+  .showplace-wrapper-second {
+    display: flex;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -152,9 +160,9 @@
 
   .showplace__list {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     margin: 0;
     padding-top: 47px;
   }
@@ -188,5 +196,20 @@
   .showplace__slide-park,
   .showplace__red-rock {
     padding-left: 20px;
+  }
+
+  .showplace-wrapper-first {
+    margin-bottom: 10px;
+    margin-left: -30px;
+  }
+
+  .showplace-wrapper-second {
+    margin-left: -18px;
+  }
+
+  .showplace-wrapper-first,
+  .showplace-wrapper-second {
+    display: flex;
+    justify-content: center;
   }
 }
