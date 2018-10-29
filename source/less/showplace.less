@@ -1,19 +1,29 @@
 .showplace {
+  position: relative;
   align-self: center;
   border: none;
   margin: 0;
   padding: 0;
 }
 
+.showplace::before {
+  .form-tablet__line;
+  top: 0;
+  width: 320px;
+  left: 0;
+}
+
 .showplace__legend {
   .font-bold;
   text-align: center;
   padding-top: 19px;
+  margin-bottom: 4px;
 }
 
 .showplace__list {
   list-style: none;
   padding-left: 0;
+  text-align: left;
 }
 
 .showplace__item {
@@ -29,6 +39,23 @@
 .showplace__item label {
   .font-bold;
   text-transform: none;
+  outline: none;
+  text-align: left;
+  padding-left: 98px;
+}
+
+.showplace__item input:hover + label::before {
+  background-color: #e5e5e5;
+}
+
+.showplace__item input:active + label::before,
+.showplace__item input:focus + label::before {
+  background-color: #d5d5d5;
+}
+
+.showplace__item input:active + label::after,
+.showplace__item input:focus + label::after {
+  opacity: 0.3;
 }
 
 .showplace__item label::before {
@@ -56,6 +83,11 @@
 @media (min-width: @tablet-width) {
   .showplace {
     align-self: center;
+    margin-top: -25px;
+  }
+
+  .showplace::before {
+    content: none;
   }
 
   .showplace__item label {
@@ -83,11 +115,13 @@
   }
 
   .showplace__list {
+    width: 70%;
+    margin-left: 100px;
     display: flex;
     flex-wrap: wrap;
     padding-top: 26px;
     padding-left: 0;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .showplace__item {
@@ -98,50 +132,32 @@
     margin-right: 0;
   }
 
-  .showplace__list li:nth-child(2) {
-    margin-left: 50px;
+  .showplace__list li:nth-child(3) {
+    margin-left: 14px;
   }
 
-  .showplace__list li:nth-child(1) {
-    margin-right: 13px;
+  .showplace__list li:nth-child(4) {
+    margin-left: 50px;
   }
 
   .showplace__red-rock {
     padding-left: 20px;
   }
-
-  .showplace__list li:nth-child(3) label::before,
-  .showplace__list li:nth-child(4) label::before,
-  .showplace__list li:nth-child(3) label::after,
-  .showplace__list li:nth-child(4) label::after {
-    top: 10px;
-  }
-
-  .showplace-wrapper-first {
-    margin-bottom: 10px;
-    margin-left: -30px;
-  }
-
-  .showplace-wrapper-second {
-    margin-left: -18px;
-  }
-
-  .showplace-wrapper-first,
-  .showplace-wrapper-second {
-    display: flex;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .showplace {
-    width: 960px;
-    margin-left: 100px;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-bottom: 22px;
   }
 
   .showplace__legend {
     padding-top: 25px;
-    padding-left: 340px;
+    padding-left: 300px;
     padding-right: 300px;
+    margin-bottom: 16px;
   }
 
   .showplace__legend::before {
@@ -158,58 +174,45 @@
     bottom: 25px;
   }
 
+  .showplace__list li:nth-child(2) {
+    margin-left: 55px;
+  }
+
+  .showplace__list li:nth-child(3) {
+    margin-left: 50px;
+  }
+
+  .showplace__list li:nth-child(4) {
+    margin-left: 35px;
+  }
+
   .showplace__list {
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding-top: 47px;
-  }
-
-  .showplace__list li {
+    flex-direction: row;
+    justify-content: space-between;
     margin: 0;
   }
 
-  .showplace__list li:nth-child(2) {
-    margin-left: 48px;
+  .showplace__item {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 15px;
   }
 
-  .showplace__list li:nth-child(3),
-  .showplace__list li:nth-child(4) {
-    padding-top: 14px;
-    margin-left: 30px;
+  .showplace__item label {
+    padding-left: 80px;
   }
 
-  .showplace__list li:nth-child(3) label::before,
-  .showplace__list li:nth-child(3) label::after {
-    left: -58px;
-    top: 0;
+  .showplace__item label::before,
+  .showplace__item input:checked + label::after {
+    left: 0;
   }
 
   .showplace__list li:last-child label::before,
   .showplace__list li:last-child label::after {
-    left: -40px;
+    left: 0;
     top: 0;
-  }
-
-  .showplace__slide-park,
-  .showplace__red-rock {
-    padding-left: 20px;
-  }
-
-  .showplace-wrapper-first {
-    margin-bottom: 10px;
-    margin-left: -30px;
-  }
-
-  .showplace-wrapper-second {
-    margin-left: -18px;
-  }
-
-  .showplace-wrapper-first,
-  .showplace-wrapper-second {
-    display: flex;
-    justify-content: center;
   }
 }

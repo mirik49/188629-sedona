@@ -34,6 +34,7 @@
         </picture>
       </a>
     </header>
+    
     <div class="main-container">
       <main class="page-main">
         <h1 class="visually-hidden">Отзыв о седоне</h1>
@@ -100,32 +101,28 @@
               <fieldset class="showplace">
                 <legend class="showplace__legend">Посещенные достопримечательности</legend>
                 <ul class="showplace__list">
-                  <div class="showplace-wrapper-first">
-                    <li class="showplace__item">
-                      <input type="checkbox" name="devil-bridge" id="devil-bridge" tabindex="0" checked>
-                      <label class="showplace__devil-bridge" for="devil-bridge" tabindex="0">Мост Дьявола</label>
-                    </li>
-                    <li class="showplace__item">
-                      <input type="checkbox" name="mountain-bell" id="mountain-bell" tabindex="0" checked>
-                      <label class="showplace__mountain-bell" for="mountain-bell" tabindex="0">Гора Колокол</label>
-                    </li>
-                  </div>
-                  <div class="showplace-wrapper-second">
-                    <li class="showplace__item">
-                      <input type="checkbox" name="slide-park" id="slide-park" tabindex="0" checked>
-                      <label class="showplace__slide-park" for="slide-park" tabindex="0">Слайд-парк</label>
-                    </li>
-                    <li class="showplace__item">
-                      <input type="checkbox" name="red-rocks" id="red-rocks" tabindex="0">
-                      <label class="showplace__red-rock" for="red-rocks" tabindex="0">Красные скалы</label>
-                    </li>
-                  </div>
+                  <li class="showplace__item">
+                    <input type="checkbox" name="devil-bridge" id="devil-bridge" tabindex="0" checked>
+                    <label class="showplace__devil-bridge" for="devil-bridge" tabindex="0">Мост Дьявола</label>
+                  </li>
+                  <li class="showplace__item">
+                    <input type="checkbox" name="mountain-bell" id="mountain-bell" tabindex="0" checked>
+                    <label class="showplace__mountain-bell" for="mountain-bell" tabindex="0">Гора Колокол</label>
+                  </li>
+                  <li class="showplace__item">
+                    <input type="checkbox" name="slide-park" id="slide-park" tabindex="0" checked>
+                    <label class="showplace__slide-park" for="slide-park" tabindex="0">Слайд-парк</label>
+                  </li>
+                  <li class="showplace__item">
+                    <input type="checkbox" name="red-rocks" id="red-rocks" tabindex="0">
+                    <label class="showplace__red-rock" for="red-rocks" tabindex="0">Красные скалы</label>
+                  </li>
                 </ul>
               </fieldset>
               <fieldset class="emotion">
                 <legend class="emotion__legend">Опишите свои эмоции:</legend>
                 <label class="visually-hidden" for="emotion-text">Опишите свои эмоции:</label>
-                <input type="textarea" name="emotion" id="emotion-text" placeholder="Опишите подробно все свои восторги">
+                <textarea name="emotion" id="emotion-text">Опишите подробно все свои восторги</textarea>
               </fieldset>
             </div>
             <button type="submit" id="form-button" class="send-form button">Отправить отзыв</button>

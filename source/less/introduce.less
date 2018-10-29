@@ -1,8 +1,17 @@
 .introduce {
+  position: relative;
   align-self: center;
   padding: 0;
   margin: 0;
   border: none;
+  margin-bottom: 6px;
+}
+
+.introduce::before {
+  .form-tablet__line;
+  top: -4px;
+  width: 320px;
+  left: 16px;
 }
 
 .introduse__legend {
@@ -14,12 +23,16 @@
 }
 
 .introduce__list {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
   list-style: none;
   padding: 0;
 }
 
 .introduce__item {
-  width: 280px;
+  width: 100%;
   padding-bottom: 18px;
   display: flex;
 }
@@ -28,14 +41,26 @@
   .font;
   font-size: 14px;
   padding-top: 18px;
-  padding-right: 15px;
+  margin-right: 20px;
 }
 
 .introduce__list input {
   border: none;
   height: 58px;
   background-color: #f2f2f2;
-  padding-left: 23px;
+  padding-left: 20px;
+  flex-grow: 1;
+}
+
+.introduce__list input:hover {
+  background-color: #e5e5e5;
+}
+
+.introduce__list input:active,
+.introduce__list input:focus {
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
+  outline: none;
 }
 
 .introduce__list input[placeholder] {
@@ -48,23 +73,30 @@
     padding-right: 0;
   }
 
+  .introduce::before {
+    content: none;
+  }
+
   .introduse__legend {
     font-size: 22px;
     padding-top: 11px;
+    padding-left: 0;
     text-align: left;
+    margin-bottom: 49px;
   }
 
   .introduce__list {
     list-style: none;
     margin: 0;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .introduce__item {
     width: 100%;
-    padding-left: 0;
-    padding-bottom: 18px;
+    padding: 0;
+    margin-bottom: 18px;
     display: flex;
+    padding-left: 0;
   }
 
   .introduce__list label {
@@ -93,16 +125,23 @@
 
 @media (min-width: @desktop-width) {
   .introduce {
-    margin-left: 20px;
+    margin-left: 115px;
+    width: 44%;
+    margin-bottom: 13px;
   }
 
   .introduce__list input {
-    width: 350px;
+    width: 100%;
   }
 
   .introduse__legend {
     text-align: left;
-    padding-left: 113px;
-    padding-bottom: 40px;
+    padding-bottom: 6px;
+    padding-top: 14px;
+  }
+
+  .introduce__list {
+    padding-left: 10px;
+    width: 78%;
   }
 }

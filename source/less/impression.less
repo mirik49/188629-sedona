@@ -3,16 +3,27 @@
   border: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  margin-bottom: 15px;
 }
 
 .impression__legend {
   .font-bold;
   text-align: center;
+  margin-bottom: 17px;
+}
+
+.impression::before {
+  .form-tablet__line;
+  top: -21px;
+  width: 320px;
+  left: -38px;
 }
 
 .impression__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .impression__item {
@@ -29,6 +40,7 @@
   text-transform: none;
   position: relative;
   padding-left: 56px;
+  outline: none;
 }
 
 .impression__item label::before {
@@ -53,26 +65,44 @@
   background-color: #000000;
 }
 
+.impression__item input:hover + label::before {
+  background-color: #e5e5e5;
+}
+
+.impression__item input:focus + label::before,
+.impression__item input:active + label::before {
+  background-color: #d5d5d5;
+}
+
+.impression__item input:focus + label::after,
+.impression__item input:active + label::after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: @tablet-width) {
   .impression {
     order: -2;
+    padding-top: 20px;
+    margin: 0;
+  }
+
+  .impression::before {
+    content: none;
   }
 
   .impression::after {
     .form-tablet__line;
     width: 2px;
     height: 291px;
-    right: 0;
-    left: 0;
-    top: 0;
-    margin-left: auto;
-    margin-right: auto;
+    right: -19px;
+    top: -12px;
   }
 
   .impression__legend {
     font-size: 22px;
     padding-left: 34px;
-    padding-bottom: 38px;
+    margin-bottom: 19px;
+    padding-top: 10px;
   }
 
   .impression__list {
@@ -83,7 +113,7 @@
   }
 
   .impression__item {
-    margin-bottom: 40px;
+    margin-bottom: 53px;
     padding-top: 0px;
     padding-bottom: 0px;
   }
@@ -94,6 +124,8 @@
 
   .impression__item label {
     .font-bold;
+    font-size: 20px;
+    letter-spacing: 0.01em;
     text-transform: none;
     position: relative;
     padding-left: 100px;
@@ -125,11 +157,24 @@
 
 @media (min-width: @desktop-width) {
   .impression {
-    margin-left: 65px;
+    margin-left: 79px;
     padding-right: 133px;
   }
 
+  .impression::before {
+    content: none;
+  }
+
   .impression__legend {
-    padding-left: 57px;
+    padding-left: 52px;
+    padding-top: 20px;
+  }
+
+  .impression__item label::before {
+    left: 30px;
+  }
+
+  .impression__item input:checked + label::after {
+    left: 48px;
   }
 }
