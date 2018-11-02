@@ -1,5 +1,22 @@
 .form-wrapper {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .form-wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }

@@ -1,8 +1,20 @@
 .emotion {
+  position: relative;
+  width: 100%;
+  align-self: center;
   border: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 52px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+
+.emotion::before {
+  .form-tablet__line;
+  top: -13px;
+  width: 320px;
+  left: 0;
 }
 
 .emotion__legend {
@@ -12,31 +24,44 @@
   padding-bottom: 15px;
 }
 
-.emotion input[type="textarea"] {
-  border: none;
-  background-color: #f2f2f2;
-  width: 239px;
-  height: 120px;
-  padding: 20px;
-  margin-left: 19px;
-}
-
-.emotion input[placeholder] {
+.emotion textarea {
   .font-bold;
   text-transform: none;
+  border: none;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: auto;
+  padding-top: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 90px;
+  outline: none;
+  resize: none;
+}
+
+.emotion textarea:hover {
+  background-color: #e5e5e5;
+}
+
+.emotion textarea:active,
+.emotion textarea:focus {
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
 }
 
 @media (min-width: @tablet-width) {
   .emotion {
-    width: 648px;
-    margin-left: 40px;
+    width: 100%;
+  }
+
+  .emotion::before {
+    content: none;
   }
 
   .emotion__legend {
     position: relative;
     font-size: 21px;
-    padding-top: 31px;
-    padding-left: 42px;
+    padding-top: 34px;
     padding-bottom: 60px;
   }
 
@@ -48,25 +73,26 @@
 
   .emotion__legend::after {
     .form-tablet__line;
-    left: -156px;
+    left: -197px;
     bottom: 72px;
   }
 
-  .emotion input[type="textarea"] {
-    width: 608px;
-    height: 120px;
+  .emotion textarea {
+    width: 89%;
+    margin-left: 40px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .emotion {
-    width: 960px;
-    margin-left: 100px;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-bottom: 46px;
   }
 
   .emotion__legend {
     padding-top: 44px;
-    padding-left: 21px;
   }
 
   .emotion__legend::before {
@@ -83,9 +109,10 @@
     bottom: 72px;
   }
 
-  .emotion input[type="textarea"] {
-    width: 920px;
-    height: 140px;
-    padding: 20px;
+  .emotion textarea {
+    width: 100%;
+    height: 160px;
+    padding-top: 15px;
+    margin: 0;
   }
 }

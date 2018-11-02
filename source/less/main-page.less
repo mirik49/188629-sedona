@@ -1,61 +1,77 @@
-.main-page__header-text {
+.main-page__header {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
+  margin-top: -30px;
+  padding-top: 88px;
+}
 
-  margin: 0 auto;
-  margin-top: -25px;
-  z-index: 3;
-  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat 0 100%,
-              url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0%;
+.main-page__header-text {
+  display: block;
+  text-align: center;
+  margin: 0;
+  z-index: 1;
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat 50% 100%;
+  padding-bottom: 82px;
+  background-size: cover;
 }
 
 .main-page__header-text img {
-  padding-top: 90px;
-  padding-bottom: 80px;
-  padding-left: 18px;
+  width: 282px;
+  height: auto;
+}
+
+.main-page {
+  padding-bottom: 34px;
 }
 
 @media (min-width: @tablet-width) {
+  .main-page {
+    padding-bottom: 0;
+  }
+
   .main-page__header {
-    padding-top: 40px;
-    padding-bottom: 10px;
+    margin-top: -32px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 2px;
+    width: 100%;
+    padding-top: 79px;
+    margin-bottom: 50px;
   }
 
   .main-page__header-text {
-    height: 539px;
-    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat 0 96%,
-                url("../img/bg-back-tablet@1x.jpg") no-repeat 0 2px;
+    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat 50% 100%;
+    padding-top: 0;
+    padding-bottom: 86px;
+    display: block;
+    background-size: contain;
   }
 
   .main-page__header-text img {
-    padding-top: 75px;
-    padding-left: 154px;
+    padding: 0;
     width: 460px;
-    height: 360px;
+    height: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-main {
-    box-shadow:
-      -40px 0 0 0 #f2f2f2,
-      40px 0 0 0 #f2f2f2;
-  }
-
   .main-page__header {
-    padding-top: 40px;
-    padding-bottom: 10px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 2px;
+    width: 100%;
+    padding-top: 112px;
+    margin-top: -32px;
+    margin-bottom: 47px;
   }
 
   .main-page__header-text {
-    height: 539px;
-    margin-top: -73px;
-    background: url("../img/bg-intro-triangle-desktop.svg") no-repeat 0 96%,
-                url("../img/bg-back-desktop@1x.jpg") no-repeat 0 2px;
+    padding: 0;
+    display: block;
+    text-align: center;
+    background: url("../img/bg-intro-triangle-desktop.svg") no-repeat 50% 100%;
+    background-size: contain;
+    padding-bottom: 88px;
+    margin-top: -32px;
   }
 
   .main-page__header-text img {
-    padding-top: 75px;
-    padding-left: 370px;
-    width: 460px;
-    height: 360px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

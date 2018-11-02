@@ -1,18 +1,29 @@
 .showplace {
+  position: relative;
+  align-self: center;
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.showplace::before {
+  .form-tablet__line;
+  top: 0;
+  width: 320px;
+  left: 0;
 }
 
 .showplace__legend {
   .font-bold;
   text-align: center;
   padding-top: 19px;
+  margin-bottom: 4px;
 }
 
 .showplace__list {
   list-style: none;
-  padding-left: 100px;
+  padding-left: 0;
+  text-align: left;
 }
 
 .showplace__item {
@@ -28,6 +39,23 @@
 .showplace__item label {
   .font-bold;
   text-transform: none;
+  outline: none;
+  text-align: left;
+  padding-left: 98px;
+}
+
+.showplace__item input:hover + label::before {
+  background-color: #e5e5e5;
+}
+
+.showplace__item input:active + label::before,
+.showplace__item input:focus + label::before {
+  background-color: #d5d5d5;
+}
+
+.showplace__item input:active + label::after,
+.showplace__item input:focus + label::after {
+  opacity: 0.3;
 }
 
 .showplace__item label::before {
@@ -35,8 +63,8 @@
   position: absolute;
   width: 55px;
   height: 55px;
-  top: 0px;
-  left: -80px;
+  top: 0;
+  left: 20px;
   border-radius: 4px;
   background-color: #f2f2f2;
 }
@@ -46,24 +74,32 @@
   position: absolute;
   width: 55px;
   height: 55px;
-  top: 0px;
-  left: -80px;
+  top: 0;
+  left: 20px;
   border-radius: 4px;
   background: url("../img/icon-tick.svg") no-repeat 50% 50%;
 }
 
 @media (min-width: @tablet-width) {
   .showplace {
-    width: 648px;
-    margin-left: 135px;
+    align-self: center;
+    margin-top: -25px;
+  }
+
+  .showplace::before {
+    content: none;
+  }
+
+  .showplace__item label {
+    padding-left: 100px;
   }
 
   .showplace__legend {
     position: relative;
     font-size: 21px;
-    padding-left: 53px;
-    padding-right: 190px;
-    padding-top: 32px;
+    padding-top: 48px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 
   .showplace__legend::before {
@@ -74,95 +110,109 @@
 
   .showplace__legend::after {
     .form-tablet__line;
-    left: -76px;
+    left: 60px;
     bottom: 25px;
   }
 
   .showplace__list {
+    width: 70%;
+    margin-left: 100px;
     display: flex;
     flex-wrap: wrap;
     padding-top: 26px;
+    padding-left: 0;
+    justify-content: space-around;
   }
 
   .showplace__item {
-    margin-right: 146px;
+    margin: 0;
   }
 
   .showplace__list li:last-child {
     margin-right: 0;
   }
 
-  .showplace__list li:nth-child(3),
+  .showplace__list li:nth-child(3) {
+    margin-left: 14px;
+  }
+
   .showplace__list li:nth-child(4) {
-    padding-top: 24px;
+    margin-left: 50px;
   }
 
   .showplace__red-rock {
     padding-left: 20px;
-  }
-
-  .showplace__list li:nth-child(3) label::before,
-  .showplace__list li:nth-child(4) label::before,
-  .showplace__list li:nth-child(3) label::after,
-  .showplace__list li:nth-child(4) label::after {
-    top: 10px;
-  }
-
-  .showplace__list li:last-child label::before,
-  .showplace__list li:last-child label::after {
-    left: -58px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .showplace {
-    width: 960px;
-    margin-left: 100px;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-bottom: 22px;
   }
 
   .showplace__legend {
     padding-top: 25px;
-    padding-left: 340px;
+    padding-left: 300px;
     padding-right: 300px;
+    margin-bottom: 16px;
   }
 
-  .showplace__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 0;
-    padding-top: 47px;
+  .showplace__legend::before {
+    .form-tablet__line;
+    width: 280px;
+    right: -21px;
+    bottom: 25px;
   }
 
-  .showplace__list li {
-    margin: 0;
+  .showplace__legend::after {
+    .form-tablet__line;
+    width: 280px;
+    left: 21px;
+    bottom: 25px;
   }
 
   .showplace__list li:nth-child(2) {
-    margin-left: 48px;
+    margin-left: 55px;
   }
 
-  .showplace__list li:nth-child(3),
+  .showplace__list li:nth-child(3) {
+    margin-left: 50px;
+  }
+
   .showplace__list li:nth-child(4) {
-    padding-top: 14px;
-    margin-left: 30px;
+    margin-left: 35px;
   }
 
-  .showplace__list li:nth-child(3) label::before,
-  .showplace__list li:nth-child(3) label::after {
-    left: -58px;
-    top: 0;
+  .showplace__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .showplace__item {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  .showplace__item label {
+    padding-left: 80px;
+  }
+
+  .showplace__item label::before,
+  .showplace__item input:checked + label::after {
+    left: 0;
   }
 
   .showplace__list li:last-child label::before,
   .showplace__list li:last-child label::after {
-    left: -40px;
+    left: 0;
     top: 0;
-  }
-
-  .showplace__slide-park,
-  .showplace__red-rock {
-    padding-left: 20px;
   }
 }

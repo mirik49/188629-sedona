@@ -8,43 +8,54 @@
   width: 27px;
   height: 27px;
   top: 171px;
-  left: 146px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   background: url("../img/icon-map-marker.svg") no-repeat 50% 50%;
 }
 
 .map p {
   margin: 0;
   padding-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+.map__image img {
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .map__image img {
-    width: 768px;
-    height: 350;
+    display: block;
+    width: 100%;
   }
 
   .map p {
     padding-top: 20px;
+    width: 100%;
   }
 
   .map__image::before {
     top: 182px;
-    left: 370px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map__image img {
-    width: 1200px;
-    height: 350px;
-  }
-
-  .map p {
-    padding-top: 20px;
+    width: 100%;
   }
 
   .map__image::before {
     top: 182px;
-    left: 370px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
