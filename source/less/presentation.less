@@ -79,19 +79,48 @@ input[type="range"]::-webkit-slider-runnable-track {
   left: 20px;
 }
 
-.presantation__video-replay {
-  .videoButton;
-  background: url("../img/icon-video-replay.svg") no-repeat 50% 50%;
+.presentation__repeat,
+.presentation__subtitles,
+.presentation__fullscreen {
+  position: absolute;
+  fill: #000000;
 }
 
-.presantation__video-subtitles {
-  .videoButton;
-  width: 32px;
-  left: 174px;
-  background: url("../img/icon-video-subtitles.svg") no-repeat 50% 50%;
+.presentation__repeat {
+  top: 25px;
+  left: 25px;
 }
+
+.presentation__subtitles {
+  top: 26px;
+  left: 174px;
+}
+
+.presentation__fullscreen {
+  top: 26px;
+  left: 237px;
+}
+// .presantation__video-replay {
+//   .videoButton;
+//   background: url("../img/icon-video-replay.svg") no-repeat 50% 50%;
+// }
+//
+// .presantation__video-subtitles {
+//   .videoButton;
+//   width: 32px;
+//   left: 174px;
+//   background: url("../img/icon-video-subtitles.svg") no-repeat 50% 50%;
+// }
+//
+// .presantation__video-fulscreen {
+//   .videoButton;
+//   left: 237px;
+//   background: url("../img/icon-video-fullscreen.svg") no-repeat 50% 50%;
+//}
 
 .presentation__button {
+  border: none;
+  background: none;
   opacity: 0.8;
   outline: none;
 }
@@ -103,12 +132,6 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .presentation__button:active {
   opacity: 0.3;
-}
-
-.presantation__video-fulscreen {
-  .videoButton;
-  left: 237px;
-  background: url("../img/icon-video-fullscreen.svg") no-repeat 50% 50%;
 }
 
 @media (min-width: @tablet-width) {
@@ -188,22 +211,25 @@ input[type="range"]::-webkit-slider-runnable-track {
     top: 353px;
   }
 
-  .presantation__video-replay {
-    top: 105px;
-    left: 73px;
-    background: url("../img/icon-video-replay-w.svg") no-repeat 50% 50%;
+  .presentation__repeat,
+  .presentation__subtitles,
+  .presentation__fullscreen {
+    fill: #ffffff;
   }
 
-  .presantation__video-subtitles {
+  .presentation__repeat {
+    top: 106px;
+    left: 74px;
+  }
+
+  .presentation__subtitles {
     top: 107px;
-    left: 565px;
-    background: url("../img/icon-video-subtitles-w.svg") no-repeat 50% 50%;
+    left: 564px;
   }
 
-  .presantation__video-fulscreen {
-    top: 105px;
-    left: 628px;
-    background: url("../img/icon-video-fullscreen-w.svg") no-repeat 50% 50%;
+  .presentation__fullscreen {
+    top: 107px;
+    left: 627px;
   }
 
   .presentation__button {
@@ -288,18 +314,18 @@ input[type="range"]::-webkit-slider-runnable-track {
     top: 359px;
   }
 
-  .presantation__video-replay {
+  .presentation__repeat {
+    top: 100px;
+    left: 214px;
+  }
+
+  .presentation__subtitles {
     top: 101px;
-    left: 213px;
+    left: 854px;
   }
 
-  .presantation__video-subtitles {
-    top: 103px;
-    left: 855px;
-  }
-
-  .presantation__video-fulscreen {
-    top: 103px;
+  .presentation__fullscreen {
+    top: 101px;
     left: 917px;
   }
 }
