@@ -53,10 +53,8 @@
           <p class="review__description">Помогите нашим отелям стать лучше!
             Оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
-
-  <!-- Согласно методологии "БЭМ" у всех элементов на странице должен быть класс. Допускается только не присваивать класс оконечным элементам (таких у которых не может быть вложенности, например img) -->
           <form action="https://echo.htmlacademy.ru" method="post" class="review-form">
-            <div class="form-wrapper">
+            <div class="review-form__wrapper">
               <fieldset class="introduce">
                 <legend class="introduse__legend">Представьтесь:</legend>
                 <ul class="introduce__list">
@@ -131,8 +129,8 @@
                 <textarea name="emotion" id="emotion-text">Опишите подробно все свои восторги</textarea>
               </fieldset>
             </div>
-            <button type="submit" id="form-button" class="send-form button">Отправить отзыв</button>
-            <p class="form__footnote"> <sup>*</sup> — обязательные поля</p>
+            <button type="submit" id="form-button" class="review-form__send-form button">Отправить отзыв</button>
+            <p class="review-form__footnote"> <sup>*</sup> — обязательные поля</p>
           </form>
         </section>
       </main>
@@ -159,7 +157,7 @@
       <div class="page-footer__developed-wrapper">
         <p class="page-footer__developed">Разработано</p>
         <a class="page-footer__developed-link" href="https://htmlacademy.ru">
-          <svg class="footer__icon-htmla" width="27" height="34"><use xlink:href="#icon-htmla"></use></svg>
+          <svg class="footer__icon-htmla" width="27" height="34"><use xlink:href="#icon-htmlacademy"></use></svg>
         </a>
       </div>
     </footer>

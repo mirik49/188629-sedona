@@ -1,7 +1,7 @@
 .galery__title {
   .font-bold;
   text-align: center;
-  padding-top: 38px;
+  padding-top: 39px;
   margin: 0;
   margin-bottom: 16px;
 }
@@ -37,7 +37,7 @@
 
 .galery__image {
   margin: 0;
-  padding-top: 16px;
+  padding-top: 17px;
   margin-bottom: 5px;
   height: auto;
 }
@@ -49,7 +49,7 @@
 .galery__caption {
   .font-bold;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 9px;
   font-size: 14px;
 }
 
@@ -77,17 +77,8 @@
   fill: #c5c5c5;
 }
 
-// .galery__likes::before {
-//   position: absolute;
-//   content: "";
-//   width: 23px;
-//   height: 21px;
-//   left: 0;
-//   background: url("../img/icon-like.svg") no-repeat 50% 50%;
-// }
-
 @media (min-width: @tablet-width) {
-  .galery-wrapper {
+  .galery__wrapper {
     padding-bottom: 2px;
   }
 
@@ -135,13 +126,44 @@
   }
 
   .galery__likes {
-    padding-right: 30px;
+    padding-right: 20px;
     margin-left: auto;
+    margin-top: -18px;
+  }
+
+  .galery__item:first-of-type .galery__icon-like {
+    left: 4px;
+  }
+
+  .galery__item:not(:first-of-type) .galery__caption {
+    padding-top: 8px;
+  }
+
+  .galery__item:not(:first-of-type) .galery__likes {
+    padding-right: 29px;
+    margin-top: -17px;
+  }
+
+  .galery__item:not(:first-of-type) .galery__icon-like {
+    left: 3px;
+  }
+
+  .galery__item:nth-of-type(3) .galery__likes {
+    padding-right: 37px;
     margin-top: -20px;
   }
 
+  .galery__item:nth-of-type(3) .galery__icon-like {
+    left: 4px;
+    top: 7px;
+  }
+
+  .galery__item:nth-of-type(4) .galery__caption {
+    padding-top: 7px;
+  }
+
   .galery__caption {
-    padding-top: 9px;
+    padding-top: 7px;
   }
 
   .galery__list li::before {
@@ -159,7 +181,7 @@
 
 @media (min-width: @desktop-width) {
   .galery__title {
-    padding-top: 110px;
+    padding-top: 112px;
   }
 
   .galery__description {
@@ -206,6 +228,10 @@
     padding-bottom: 5px;
   }
 
+  .galery__caption {
+    padding-top: 8px;
+  }
+
   .galery__caption,
   .galery__autor,
   .galery__likes {
@@ -213,9 +239,13 @@
   }
 
   .galery__likes {
-    padding-right: 20px;
+    padding-right: 21px;
     margin-left: auto;
-    margin-top: -20px;
+    margin-top: -16px;
+  }
+
+  .galery__item:not(:first-of-type) .galery__caption {
+    padding-top: 9px;
   }
 
   .galery__icon-like {
