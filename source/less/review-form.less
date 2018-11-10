@@ -34,6 +34,7 @@
     flex-direction: row;
     position: relative;
     margin-bottom: 6px;
+    align-items: flex-start;
   }
 
   .review-form__send-form {
@@ -57,7 +58,8 @@
 
 @media (min-width: @desktop-width) {
   .review-form {
-    margin-bottom: 66px;
+    padding-bottom: 66px;
+    margin-bottom: 0;
   }
 
   .review-form__wrapper {
@@ -69,6 +71,7 @@
   .review-form__send-form {
     margin-left: 120px;
     width: 480px;
+    padding-right: 3px;
   }
 
   .review-form__footnote {
