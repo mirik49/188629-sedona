@@ -1,6 +1,10 @@
 var btnClose = document.querySelector(".main-nav__button-open--close");
 var mainNav = document.querySelector(".main-nav__list");
 
+document.addEventListener("DOMContentLoaded", function(){
+  btnClose.classList.add("work_js");
+});
+
 btnClose.addEventListener("click", function(evt){
   if(btnClose.classList.contains("main-nav__button-open")) {
     mainNav.classList.remove("site-list__hide");
