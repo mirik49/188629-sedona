@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона форма</title>
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="/fonts/ptsansbod.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -28,7 +30,7 @@
             <a href="https://htmlacademy.ru">HTMLAcademy</a>
           </li>
         </ul>
-        <button type="button" class="main-nav__button-open">B</button>
+        <button type="button" class="main-nav__button-open--close">B</button>
       </nav>
       <a href="index.html" class="page-header__logo">
         <picture>
@@ -141,16 +143,19 @@
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link page-footer__social-link--tw">
               <svg class="page-footer__icon-tw" width="18" height="14"><use xlink:href="#icon-twitter"></use></svg>
+              <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link page-footer__social-link--fb">
               <svg class="page-footer__icon-fb" width="9" height="18"><use xlink:href="#icon-facebook"></use></svg>
+              <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link page-footer__social-link--yt">
               <svg class="page-footer__icon-yt" width="20" height="14"><use xlink:href="#icon-youtube"></use></svg>
+              <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
@@ -158,6 +163,7 @@
         <p class="page-footer__developed">Разработано</p>
         <a class="page-footer__developed-link" href="https://htmlacademy.ru">
           <svg class="footer__icon-htmla" width="27" height="34"><use xlink:href="#icon-htmlacademy"></use></svg>
+          <span class="visually-hidden">Link htmlacademy.ru</span>
         </a>
       </div>
     </footer>

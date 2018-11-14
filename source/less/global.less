@@ -35,8 +35,7 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -61,7 +60,6 @@ input[type="radio"].visually-hidden {
 @media (min-width: @desktop-width) {
   .main-container {
     max-width: 1200px;
-    box-shadow: 40px 0 0 0 #f2f2f2,
-              -40px 0 0 0 #f2f2f2;
+    box-shadow: 40px 0 0 0 #f2f2f2, -40px 0 0 0 #f2f2f2;
   }
 }

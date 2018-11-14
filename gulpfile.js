@@ -15,9 +15,8 @@ var del = require("del");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin");
-var uglify = require('gulp-uglify');
-var pump = require('pump');
-
+var uglify = require("gulp-uglify");
+var pump = require("pump");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -34,12 +33,12 @@ gulp.task("css", function () {
 });
 
 gulp.task("images", function () {
- return gulp.src("source/img/**/*.{png,jpg,svg}")
- .pipe(imagemin([
- imagemin.optipng({optimizationLevel: 3}),
- imagemin.jpegtran({progressive: true})
- ]))
- .pipe(gulp.dest("source/img"));
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.jpegtran({progressive: true})
+  ]))
+  .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("webp", function () {
@@ -68,9 +67,9 @@ gulp.task("html", function () {
 
 gulp.task("js", function (cb) {
   pump([
-        gulp.src("source/js/*.js"),
-        uglify(),
-        gulp.dest("build/js")
+    gulp.src("source/js/*.js"),
+    uglify(),
+    gulp.dest("build/js")
     ],
     cb
   );
