@@ -1,8 +1,8 @@
 .site-list__item {
   .font-bold;
   line-height: 40px;
-  padding-top: 8px;
-  padding-bottom: 6px;
+  padding-top: 7px;
+  padding-bottom: 9px;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -14,6 +14,19 @@
 .site-list__item:first-child {
   border-top: none;
   padding-bottom: 7px;
+}
+
+.site-list__item:nth-child(2) {
+  padding-bottom: 8px;
+}
+
+.site-list__item:nth-child(3) {
+  padding-bottom: 7px;
+}
+
+.site-list__item:nth-child(4) {
+  padding-bottom: 7px;
+  letter-spacing: 0.02em;
 }
 
 .site-list__item:last-child {
@@ -59,6 +72,7 @@
   }
 
   .site-list__item a {
+    width: 110px;
     color: #000000;
   }
 
